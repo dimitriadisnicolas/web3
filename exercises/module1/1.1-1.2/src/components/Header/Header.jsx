@@ -1,6 +1,7 @@
 import koda from "img/koda.png";
 
 const Header = (props) => {
+  console.log(props);
   return (
     <div>
       <img src={koda} alt="Logo" />
