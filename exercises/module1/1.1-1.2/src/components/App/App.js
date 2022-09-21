@@ -46,17 +46,7 @@ const App = () => {
       <Header course={course} />
 
       <p>
-        <Content
-          // part1
-          part1={parts[0].name}
-          exercises1={parts[0].exercises}
-          //part2
-          part2={parts[1].name}
-          exercises2={parts[1].exercises}
-          //part3
-          part3={parts[2].name}
-          exercises3={parts[2].exercises}
-        />
+        <Content part1={parts[0]} part2={parts[1]} part3={parts[2]} />
       </p>
       <p>
         <Total
