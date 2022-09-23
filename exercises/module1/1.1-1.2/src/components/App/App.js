@@ -45,14 +45,11 @@ const App = () => {
     <div>
       <Header course={course} />
 
-      <p>
-        <Content part1={parts[0]} part2={parts[1]} part3={parts[2]} />
-      </p>
-      <p>
-        <Total
-          total={parts[0].exercises + parts[1].exercises + parts[2].exercises}
-        />
-      </p>
+      <Content part1={parts[0]} part2={parts[1]} part3={parts[2]} />
+
+      <Total
+        total={parts[0].exercises + parts[1].exercises + parts[2].exercises}
+      />
     </div>
   );
 };
