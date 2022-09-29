@@ -5,18 +5,21 @@ import Button from "../Button/Button";
 const App = () => {
   const [counter, setCounter] = useState(0);
 
-  const increaseByOne = () => setCounter(counter + 1);
+  const changeCount = (delta) => {
+    setCounter(counter + delta);
+  };
 
-  const decreaseByOne = () => setCounter(counter - 1);
-
-  const setToZero = () => setCounter(0);
+  const handleClick = (e) => {
+    console.log(e.target.dataset);
+    changeCount(parseInt(e.target.dataset.delta));
+  };
 
   return (
     <div>
       <Display counter={counter} />
-      <Button onClick={increaseByOne} text="Plus" />
-      <Button onClick={setToZero} text="Zero" />
-      <Button onClick={decreaseByOne} text="Moins" />
+      <Button onClick={handleClick} text="Plus" delta={1} />
+      <Button onClick={handleClick} text="Reset" delta={-counter} />
+      <Button onClick={handleClick} text="Moins" delta={-1} />
     </div>
   );
 };
