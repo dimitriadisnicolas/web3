@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Display from "../Display/Display";
-import Button from "../Button/Button";
+import Button from "components/Button/Button";
 
 const App = () => {
   const [counter, setCounter] = useState(0);
