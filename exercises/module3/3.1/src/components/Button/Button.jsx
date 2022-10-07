@@ -3,13 +3,13 @@ import React from "react";
 function Button(props) {
   const text = props.text;
   const onClick = props.onClick;
-  const clicks = props.clicks;
+  const buttonClicks = props.clicks;
   return (
     <div>
       <button onClick={onClick}>{text}</button>{" "}
-      {clicks === 0
+      {buttonClicks === 0
         ? "U didnt click on this button yet"
-        : "U click " + clicks + " times on the " + text + " button"}
+        : "U click " + buttonClicks + " times on the " + text + " button"}
     </div>
   );
 }
