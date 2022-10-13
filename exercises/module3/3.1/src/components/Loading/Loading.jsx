@@ -1,7 +1,7 @@
 import React from "react";
 
 function Loading(props) {
-  return <div>CHARGEMENT ....</div>;
+  return <div>{<h1>Loading ....</h1>}</div>;
 }
 
 export default Loading;
