@@ -3,4 +3,8 @@ import { useContext } from "react";
 
 const FoobarButton = () => {
   const { language, pickLanguage } = useContext(LanguageContext);
+
+  return <div>{language}</div>;
 };
+
+export default FoobarButton;
