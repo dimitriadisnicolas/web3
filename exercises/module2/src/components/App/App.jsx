@@ -10,7 +10,7 @@ const App = () => {
   };
 
   const handleClick = (e) => {
-    console.log(e.target.dataset);
+    //console.log(e.target.dataset);
     changeCount(parseInt(e.target.dataset.delta));
   };
 
